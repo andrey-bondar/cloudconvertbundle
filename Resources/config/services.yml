@@ -1,0 +1,7 @@
+parameters:
+#    best_modules_cloud_convert.example.class: BestModules\CloudConvertBundle\Example
+
+services:
+#    best_modules_cloud_convert.example:
+#        class: %best_modules_cloud_convert.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

@@ -1,0 +1,3 @@
+best_modules_cloud_convert_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: BestModulesCloudConvertBundle:Default:index }

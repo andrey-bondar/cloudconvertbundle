@@ -1,0 +1,26 @@
+{
+    "name": "bestmodules/cloudconverterbundle",
+    "type": "symfony-bundle",
+    "autoload": {
+        "classmap": ["vendor/lunawebltd/cloudconvert-php/CloudConvert.class.php"]
+    },
+    "require": {
+        "php": ">=5.4.0",
+        "lunawebltd/cloudconvert-php": "dev-master"
+    },
+    "target-dir": "BestModules/CloudConverterBundle",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "lunawebltd/cloudconvert-php",
+                "version": "dev-master",
+                "source": {
+                    "url": "git@github.com:LunawebLtd/cloudconvert-php.git",
+                    "type": "git",
+                    "reference": "dev-master"
+                }
+            }
+        }
+    ]
+}

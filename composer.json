@@ -6,6 +6,11 @@
         "lunawebltd/cloudconvert-php": "dev-master"
     },
     "target-dir": "BestModules/CloudConverterBundle",
+    "autoload": {
+        "psr-0": {
+            "BestModules\\CloudConverterBundle": ""
+        }
+    },
     "repositories": [
         {
             "type": "package",

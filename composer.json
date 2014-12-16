@@ -1,9 +1,6 @@
 {
     "name": "bestmodules/cloudconverterbundle",
     "type": "symfony-bundle",
-    "autoload": {
-        "classmap": ["/vendor/lunawebltd/cloudconvert-php/CloudConvert.class.php"]
-    },
     "require": {
         "php": ">=5.4.0",
         "lunawebltd/cloudconvert-php": "dev-master"

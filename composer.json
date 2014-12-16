@@ -1,14 +1,14 @@
 {
-    "name": "bestmodules/cloudconverterbundle",
+    "name": "bestmodules/cloudconvertbundle",
     "type": "symfony-bundle",
     "require": {
         "php": ">=5.4.0",
         "lunawebltd/cloudconvert-php": "dev-master"
     },
-    "target-dir": "BestModules/CloudConverterBundle",
+    "target-dir": "BestModules/CloudConvertBundle",
     "autoload": {
         "psr-0": {
-            "BestModules\\CloudConverterBundle": ""
+            "BestModules\\CloudConvertBundle": ""
         }
     },
     "repositories": [

@@ -2,7 +2,7 @@
     "name": "bestmodules/cloudconverterbundle",
     "type": "symfony-bundle",
     "autoload": {
-        "classmap": ["vendor/lunawebltd/cloudconvert-php/CloudConvert.class.php"]
+        "classmap": ["/vendor/lunawebltd/cloudconvert-php/CloudConvert.class.php"]
     },
     "require": {
         "php": ">=5.4.0",
@@ -18,7 +18,7 @@
                 "source": {
                     "url": "git@github.com:LunawebLtd/cloudconvert-php.git",
                     "type": "git",
-                    "reference": "dev-master"
+                    "reference": "origin/master"
                 }
             }
         }

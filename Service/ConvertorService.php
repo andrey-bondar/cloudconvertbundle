@@ -2,6 +2,7 @@
 namespace BestModules\CloudConvertBundle\Service;
 
 use Symfony\Component\HttpFoundation\File\File;
+use \BestModules\CloudConvertBundle\CloudConvert;
 
 class ConvertorService 
 {
@@ -15,13 +16,16 @@ class ConvertorService
         $this->apiKey = $apiKey;
     }
     
-    public function convertFile(File $file, $outputFormat)
+    public function convertFile($filepath, $outputFormat)
     {
-        $process = \CloudConvert::createProcess($file->getExtension(), $outputFormat);
-        $process->upload($file->getPath(), $outputFormat);
+        $pathinfo = pathinfo($filepath);
+        $process = CloudConvert::createProcess($pathinfo['extension'], $outputFormat, $this->apiKey);
+        $process->upload($filepath, $outputFormat);
+        
+//        $process = CloudConvert::useProcess('https://l4.cloudconvert.com/process/Pr79KlxO1AwoByCQEF3b');
         
         if ($process->waitForConversion()) {
-            $process->download($target);
+            return $process->getFiles();
         }
     }
 }
